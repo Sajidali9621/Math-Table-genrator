@@ -23,17 +23,20 @@
         <div id="display"></div>
     </center>
 
-    <script>
-        function generateTable() {
-            var getData = document.getElementById("number").value;
-            var putData = document.getElementById("display");
-            var i, result;
-            for (i = 1; i <= 10; i++) {
-                result = getData * i;
-                putData.innerHTML += getData + " &times; " + i + " = " + result + "<br>";
-            }
+    
+        <script>
+    function generateTable() {
+        var getData = document.getElementById("number").value;
+        var putData = document.getElementById("display");
+        var i, result;
+        putData.innerHTML = ""; // Clear previous table content
+        for (i = 1; i <= 10; i++) {
+            result = getData * i;
+            putData.innerHTML += getData + " &times; " + i + " = " + result + "<br>";
         }
-    </script>
+    }
+</script>
+    
 
 
 </body>
